@@ -20,7 +20,7 @@ jobs:
         run: ls -R
 
       - name: Restore deps
-        run: dotnet restore BlinkitGHA.sln
+        run: dotnet restore 
 
       - name: Build
-        run: dotnet build BlinkitGHA.sln --configuration Release --no-restore
+        run: dotnet build  --configuration Release --no-restore
